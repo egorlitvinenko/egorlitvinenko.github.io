@@ -2,7 +2,8 @@
   "meta": {
     "username": "egorlitvinenko",
     "repositoryName": "egorlitvinenko.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": ""
   },
   "theme": {
     "name": "casper"
@@ -22,5 +23,27 @@
       null,
       null
     ]
+  },
+  "site": {
+    "title": "Egor Litvinenko",
+    "description": "Senior software developer",
+    "logo": "",
+    "cover": "",
+    "delay": "",
+    "postsPerPage": "",
+    "googleAnalytics": "",
+    "disqus": ""
+  },
+  "socialnetwork": {
+    "email": "e.v.litvinenko.1@gmail.com",
+    "github": "egorlitvinenko",
+    "twitter": "",
+    "facebook": "egor.litvinenko",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "egor.litvinenko",
+    "stackoverflow": "egorlitvinenko"
   }
 }
