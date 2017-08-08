@@ -5,6 +5,7 @@
 :hp-tags: Egor Litvinenko, HubPress, Hello World
 :hp-alt-title: Hello World
 
+[source,java]
 ----
 public static void main(String... args) {
         System.out.println("Hello, world");
