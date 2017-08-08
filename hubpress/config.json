@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "saga"
+    "name": "uno"
   },
   "urls": {
     "site": "https://egorlitvinenko.github.io",
     "hubpress": "https://egorlitvinenko.github.io",
-    "theme": "//egorlitvinenko.github.io/themes/casper",
+    "theme": "//egorlitvinenko.github.io/themes/saga",
     "images": "https://egorlitvinenko.github.io/images"
   },
   "initialisationConfigComponent": {
