@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "uno-zen"
+    "name": "uno"
   },
   "urls": {
     "site": "https://egorlitvinenko.github.io",
     "hubpress": "https://egorlitvinenko.github.io",
-    "theme": "//egorlitvinenko.github.io/themes/uno",
+    "theme": "//egorlitvinenko.github.io/themes/uno-zen",
     "images": "https://egorlitvinenko.github.io/images"
   },
   "initialisationConfigComponent": {
