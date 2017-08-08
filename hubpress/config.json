@@ -11,7 +11,7 @@
   "urls": {
     "site": "https://egorlitvinenko.github.io",
     "hubpress": "https://egorlitvinenko.github.io",
-    "theme": "//egorlitvinenko.github.io/themes/saga",
+    "theme": "//egorlitvinenko.github.io/themes/uno",
     "images": "https://egorlitvinenko.github.io/images"
   },
   "initialisationConfigComponent": {
@@ -36,7 +36,7 @@
   },
   "socialnetwork": {
     "email": "e.v.litvinenko.1@gmail.com",
-    "github": "egorlitvinenko",
+    "github": "https://github.com/egorlitvinenko",
     "twitter": "",
     "facebook": "egor.litvinenko",
     "googleplus": "",
