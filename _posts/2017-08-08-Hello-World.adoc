@@ -1,6 +1,5 @@
 = Hello, world
 // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
-:hp-image: /covers/cover.png
 :published_at: 2017-08-08
 :hp-tags: Egor Litvinenko, HubPress, Hello World
 :hp-alt-title: Hello World
