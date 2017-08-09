@@ -11,7 +11,7 @@
   "urls": {
     "site": "https://egorlitvinenko.github.io",
     "hubpress": "https://egorlitvinenko.github.io",
-    "theme": "//egorlitvinenko.github.io/themes/uno",
+    "theme": "//egorlitvinenko.github.io/themes/ghostium",
     "images": "https://egorlitvinenko.github.io/images"
   },
   "initialisationConfigComponent": {
@@ -26,9 +26,9 @@
   },
   "site": {
     "title": "Egor Litvinenko",
-    "description": "Senior software developer",
+    "description": "Egor Litvinenko is a senior software developer. Working mostly with Java Technologies and focusing on sytem integration and performance.",
     "logo": "",
-    "cover": "",
+    "cover": "themes/uno/assets/images/background-cover.jpg",
     "delay": "",
     "postsPerPage": "",
     "googleAnalytics": "",
