@@ -10,6 +10,4 @@ public static void main(String... args) {
         System.out.println("Hello, world");
 }
 ----
-[source,AsciiDoc]
-----
 image::hello_savepoint.png[]
