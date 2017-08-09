@@ -10,3 +10,6 @@ public static void main(String... args) {
         System.out.println("Hello, world");
 }
 ----
+[source,AsciiDoc]
+----
+image::https://github.com/egorlitvinenko/egorlitvinenko.github.io/images/hello_savepoint.png
