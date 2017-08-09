@@ -12,4 +12,4 @@ public static void main(String... args) {
 ----
 [source,AsciiDoc]
 ----
-image::https://github.com/egorlitvinenko/egorlitvinenko.github.io/images/hello_savepoint.png[]
+image::hello_savepoint.png[]
