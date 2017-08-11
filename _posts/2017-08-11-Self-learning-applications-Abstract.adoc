@@ -2,8 +2,8 @@
 // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
 // :hp-image: /covers/cover.png
 // :published_at: 2019-01-31
-// :hp-tags: Machine learning, optimization, software engineering
-// :hp-alt-title: Self learning applications - Abstract
+:hp-tags: Machine learning, optimization, software engineering
+:hp-alt-title: Self learning applications - Abstract
 
 I think most of the programmist know what is batch size.
 What is batch size of your application? How did you or your team choose it?
