@@ -1,0 +1,13 @@
+= Self learning applications - Abstract
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: Machine learning, optimization, software engineering
+// :hp-alt-title: Self learning applications - Abstract
+
+I think most of the programist know what is batch size.
+What is batch size of your application? How did you or your team choose it?
+Generally, we use fundamental knowledge, recommendations and some tests to find batch size, which with we would have best (or usually fastest) results.
+
+Is it enough?
+You did test on your local machine. Is environment of production machine the same? Has environment the same workload? Usually, all answers for this questions are negative. More over, even for production environment you could have different workloads, using multiple servers.
