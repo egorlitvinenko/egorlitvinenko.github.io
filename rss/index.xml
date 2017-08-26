@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 09 Aug 2017 20:51:29 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Hello, world]]></title><description><![CDATA[<div class="listingblock">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Aug 2017 12:39:46 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Self learning applications - Abstract]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Status: Article in progress</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prehistory">Prehistory</h3>
+<div class="paragraph">
+<p>What is your batch size? When I did tests for parsing csv and write to CH (now on <a href="https://github.com/egorlitvinenko/testparsing">Github</a>), I saw that I have some variables: ring buffer size and batch size of Clickhouse driver, which I don’t know apriory, because ring buffer size is a <a href="https://github.com/LMAX-Exchange/disruptor/wiki/Frequently-Asked-Questions">CPU L3 cache size</a> and batch size depends on many factors, even on my laptop it could be changed depends on logging settings. And I realized that we could have another familly of applications, which should define their parameters dynamically at runtime.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_think_about_it">Think about it</h3>
+<div class="paragraph">
+<p>Let’s imagine what does influence on batch size of application?
+If your database is remote, then it is at least network connection. If your database is local, then it is disk speed. What else? You also could mention branch predictions, cache coherence, false sharing and other effects reffered to multithreading processing, where batches decrease thread switches. What else? If you use compressing to reduce IO you should find batch size as a golden middle between CPU load and compressing. Or just row size. Really, when we set batch size we don’t think about that, generally. There are many effects and reasons.
+And all of them could be changed from x86 to x64 or PowerPC, or from node to node, or even on one node by different performance profile and load.</p>
+</div>
+<div class="paragraph">
+<p>Batch size is only one variable. For instance, if we create parsing application, which read file → parse → write to database in multiple threads (typically two threads with pipe streams), there will new parameters – queue sizes for threads. So we could have a set of parameters, which influence on one big task.</p>
+</div>
+<div class="paragraph">
+<p>So who know what should batch size equal? The only answer is runtime. Moreover, theoretically runtime could determine what batch size is best in particular scenarious (when we have different load on server, for instnace).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_we_have">What we have?</h3>
+<div class="paragraph">
+<p>In modern live it makes sense to suppose that someone already did it for us. I found this articles:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.computerworld.com/article/2560247/app-development/self-taught&#8212;&#8203;software-that-learns-by-doing.html" class="bare">http://www.computerworld.com/article/2560247/app-development/self-taught&#8212;&#8203;software-that-learns-by-doing.html</a></p>
+</li>
+<li>
+<p><a href="https://www.forbes.com/sites/teradata/2015/04/08/the-holy-grail-of-business-automation-self-learning-applications/#23e57971982f" class="bare">https://www.forbes.com/sites/teradata/2015/04/08/the-holy-grail-of-business-automation-self-learning-applications/#23e57971982f</a></p>
+</li>
+<li>
+<p><a href="https://www.forbes.com/sites/teradata/2015/03/06/need-new-business-insights-listen-to-your-things/#4f2cc59a743e" class="bare">https://www.forbes.com/sites/teradata/2015/03/06/need-new-business-insights-listen-to-your-things/#4f2cc59a743e</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>They talk about IoT and something close, but not the same. The difference is above articles are about collecting data from devices, and I’m talking about application. Maybe from some point of view is the same, because I also mean that we have some device (computer), where we run application and collect feedbacks. But the main difference is it’s not about machines only. People also could participate in this process. Also in practice it could be not about “big data”. For big data we need a lot of experiments, and our dynamic algorithms should be responsive enough and appropriate even we don&#8217;t have too much collected data.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_practice">Practice</h3>
+<div class="paragraph">
+<p>Let’s describe simple model, which will represent and solve the task of batch size (from the start).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://egorlitvinenko.github.io/images/SelfLearningApp-Sequence.png" alt="SelfLearningApp Sequence.png">
+</div>
+</div>
+</div>]]></description><link>https://egorlitvinenko.github.io/2017/08/11/Self-learning-applications-Abstract.html</link><guid isPermaLink="true">https://egorlitvinenko.github.io/2017/08/11/Self-learning-applications-Abstract.html</guid><category><![CDATA[Machine learning]]></category><category><![CDATA[optimization]]></category><category><![CDATA[software engineering]]></category><dc:creator><![CDATA[Egor]]></dc:creator><pubDate>Fri, 11 Aug 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Hello, world]]></title><description><![CDATA[<div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">public static void main(String... args) {
         System.out.println("Hello, world");
