@@ -1,4 +1,4 @@
-= Self learning applications - Abstract
+= Self learning applications
 // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
 // :hp-image: /covers/cover.png
 // :published_at: 2019-01-31
@@ -30,8 +30,9 @@ In modern live it makes sense to suppose that someone already did it for us. I f
 * https://www.forbes.com/sites/teradata/2015/03/06/need-new-business-insights-listen-to-your-things/#4f2cc59a743e
 
 They talk about IoT and something close, but not the same. The difference is above articles are about collecting data from devices, and I’m talking about application. Maybe from some point of view is the same, because I also mean that we have some device (computer), where we run application and collect feedbacks. But the main difference is it’s not about machines only. People also could participate in this process. Also in practice it could be not about “big data”. For big data we need a lot of experiments, and our dynamic algorithms should be responsive enough and appropriate even we don't have too much collected data.
+From the other side there are many runtime optimizations in JIT and HotSpot too, but this article about higher layer.
 
-### Practice
+### Algorithm
 Let’s describe simple model, which will represent and solve the task of batch size (from the start).
 
 image::SelfLearningApp-Sequence.png[]
