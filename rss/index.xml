@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Aug 2017 14:41:25 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Self learning applications]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Aug 2017 18:27:12 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Self learning applications]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Status: Article in progress</p>
@@ -78,52 +78,71 @@ From the other side there are many runtime optimizations in JIT and HotSpot too,
 <table class="tableblock frame-all grid-all spread">
 <caption class="title">Table 1. Some speed examples</caption>
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Where</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Speed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">µs</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">L1 cache reference</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0.5 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.5</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Main memory reference</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compress 1K bytes w/ cheap algorithm</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3,000
+Compress 1K bytes with Zippy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3,000</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Send 2K bytes over 1 Gbps network</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">20,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20,000</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSD random read</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150,000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Read 1 Mb sequentially from memory</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">250,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">250,000</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">250</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Round trip within same datacenter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">500,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500,000</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Read 1 Mb sequentially from network</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10,000,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10,000,000</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10,000</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Read 1 Mb sequentially from disk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30,000,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30,000,000</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30,000</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Send packet CA &#8594; Netherlands &#8594; CA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">150,000,000 ns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150,000,000</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Source: <a href="https://www.youtube.com/watch?v=h9AICWfaEVQ&amp;t" class="bare">https://www.youtube.com/watch?v=h9AICWfaEVQ&amp;t</a></p>
+<p>Sources:
+* <a href="https://www.youtube.com/watch?v=h9AICWfaEVQ&amp;t" class="bare">https://www.youtube.com/watch?v=h9AICWfaEVQ&amp;t</a>
+* <a href="https://gist.github.com/hellerbarde/2843375" class="bare">https://gist.github.com/hellerbarde/2843375</a></p>
 </div>]]></description><link>https://egorlitvinenko.github.io/1970/01/01/Speed-table.html</link><guid isPermaLink="true">https://egorlitvinenko.github.io/1970/01/01/Speed-table.html</guid><category><![CDATA[cache speed]]></category><category><![CDATA[RAM]]></category><category><![CDATA[disk]]></category><category><![CDATA[network]]></category><dc:creator><![CDATA[Egor]]></dc:creator><pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate></item></channel></rss>
