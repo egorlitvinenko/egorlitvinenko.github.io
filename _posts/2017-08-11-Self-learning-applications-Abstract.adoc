@@ -5,9 +5,47 @@
 :hp-tags: Machine learning, optimization, software engineering
 :hp-alt-title: Self learning applications - Abstract
 
-I think most of the programmist know what is batch size.
-What is batch size of your application? How did you or your team choose it?
-Generally, we use fundamental knowledge, recommendations and some tests to find batch size, which with we would have best (or usually fastest) results.
+Status: Article in progress
 
-Is it enough?
-You did test on your local machine. Is environment of production machine the same? Has environment the same workload? Usually, all answers for this questions are negative. Moreover, even for production environment you could have different workloads, using multiple servers.
+### Prehistory
+
+What is your batch size? When I did tests for parsing csv and write to CH (now on https://github.com/egorlitvinenko/testparsing[Github]), I saw that I have some variables: ring buffer size and batch size of Clickhouse driver, which I don’t know apriory, because ring buffer size is a https://github.com/LMAX-Exchange/disruptor/wiki/Frequently-Asked-Questions[CPU L3 cache size] and batch size depends on many factors, even on my laptop it could be changed depends on logging settings. And I realized that we could have another familly of applications, which should define their parameters dynamically at runtime.
+
+### Think about it
+
+Let’s imagine what does influence on batch size of application?
+If your database is remote, then it is at least network connection. If your database is local, then it is disk speed. What else? You also could mention branch predictions, cache coherence, false sharing and other effects reffered to multithreading processing, where batches decrease thread switches. What else? If you use compressing to reduce IO you should find batch size as a golden middle between CPU load and compressing. Or just row size. Really, when we set batch size we don’t think about that, generally. There are many effects and reasons.
+And all of them could be changed from x86 to x64 or PowerPC, or from node to node, or even on one node by different performance profile and load.
+
+Batch size is only one variable. For instance, if we create parsing application, which read file → parse → write to database in multiple threads (typically two threads with pipe streams), there will new parameters – queue sizes for threads. So we could have a set of parameters, which influence on one big task.
+
+So who know what should batch size equal? The only answer is runtime. Moreover, theoretically runtime could determine what batch size is best in particular scenarious (when we have different load on server, for instnace).
+
+### What we have?
+
+In modern live it makes sense to suppose that someone already did it for us. I found this articles:
+
+* http://www.computerworld.com/article/2560247/app-development/self-taught--software-that-learns-by-doing.html
+* https://www.forbes.com/sites/teradata/2015/04/08/the-holy-grail-of-business-automation-self-learning-applications/#23e57971982f
+* https://www.forbes.com/sites/teradata/2015/03/06/need-new-business-insights-listen-to-your-things/#4f2cc59a743e
+
+They talk about IoT and something close, but not the same. The difference is above articles are about collecting data from devices, and I’m talking about application. Maybe from some point of view is the same, because I also mean that we have some device (computer), where we run application and collect feedbacks. But the main difference is it’s not about machines only. People also could participate in this process. Also in practice it could be not about “big data”. For big data we need a lot of experiments, and our dynamic algorithms should be responsive enough and appropriate even we don't have too much collected data.
+
+### Practice
+Let’s describe simple model, which will represent and solve the task of batch size (from the start).
+
+image::SelfLearningApp-Sequence.png[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
