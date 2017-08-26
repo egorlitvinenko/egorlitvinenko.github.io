@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Aug 2017 12:39:46 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Self learning applications - Abstract]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Aug 2017 12:55:57 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Self learning applications]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Status: Article in progress</p>
@@ -44,11 +44,12 @@ And all of them could be changed from x86 to x64 or PowerPC, or from node to nod
 </ul>
 </div>
 <div class="paragraph">
-<p>They talk about IoT and something close, but not the same. The difference is above articles are about collecting data from devices, and I’m talking about application. Maybe from some point of view is the same, because I also mean that we have some device (computer), where we run application and collect feedbacks. But the main difference is it’s not about machines only. People also could participate in this process. Also in practice it could be not about “big data”. For big data we need a lot of experiments, and our dynamic algorithms should be responsive enough and appropriate even we don&#8217;t have too much collected data.</p>
+<p>They talk about IoT and something close, but not the same. The difference is above articles are about collecting data from devices, and I’m talking about application. Maybe from some point of view is the same, because I also mean that we have some device (computer), where we run application and collect feedbacks. But the main difference is it’s not about machines only. People also could participate in this process. Also in practice it could be not about “big data”. For big data we need a lot of experiments, and our dynamic algorithms should be responsive enough and appropriate even we don&#8217;t have too much collected data.
+From the other side there are many runtime optimizations in JIT and HotSpot too, but this article about higher layer.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_practice">Practice</h3>
+<h3 id="_algorithm">Algorithm</h3>
 <div class="paragraph">
 <p>Let’s describe simple model, which will represent and solve the task of batch size (from the start).</p>
 </div>
