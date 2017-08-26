@@ -10,10 +10,10 @@ Status - Just to know where to see quickly.
 .Some speed examples
 |===
 |What|ns| µs
-|L1 cache reference|0.5|
-|Main memory reference|100|
+|L1 cache reference|0.5|0.00005
+|Main memory reference|100|0.01
 |Compress 1K bytes w/ cheap algorithm|3,000|3
-Compress 1K bytes with Zippy|3,000|3
+|Compress 1K bytes with Zippy|3,000|3
 |Send 2K bytes over 1 Gbps network|20,000|20
 |SSD random read|150,000|150
 |Read 1 Mb sequentially from memory|250,000|250
@@ -24,6 +24,7 @@ Compress 1K bytes with Zippy|3,000|3
 |===
 
 Sources: 
+
 * https://www.youtube.com/watch?v=h9AICWfaEVQ&t
 * https://gist.github.com/hellerbarde/2843375
 
