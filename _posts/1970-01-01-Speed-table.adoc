@@ -7,7 +7,7 @@
 
 Status - Just to know where to see quickly.
 
-.Table Some speed examples
+.Some speed examples
 |===
 |Where|Speed
 |L1 cache reference|0.5 ns
@@ -21,6 +21,6 @@ Status - Just to know where to see quickly.
 |Send packet CA -> Netherlands -> CA|150,000,000 ns
 |===
 
-Source: - https://www.youtube.com/watch?v=h9AICWfaEVQ&t
+Source: https://www.youtube.com/watch?v=h9AICWfaEVQ&t
 
 
