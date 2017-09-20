@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Aug 2017 18:30:11 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Self learning applications]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 20 Sep 2017 15:58:25 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[BPMN и блокчейн]]></title><description><![CDATA[<div class="paragraph">
+<p>Сегодня большинство из вас слышало о blockchain, поэтому перейду сразу к делу.
+Я занимался разработкой BPMN процессов и сервера, обслуживающего их.
+BPMN (Business Process Model and Notation) - это стандарт графического представление элементов для описание бизнес-процессов (БП) в BPM (Business Process Management) - управление процессами.
+Традиционно BPM считается внутренней кухней организации. Другими словами большие организации создают БП для оптимизации процессов управления, которые используются внутри. Иногда БП используются между двумя организациями, когда есть большой уровень доверия.
+БП могут быть очень и очень большими, не помещаться в монитор, ватман и т.д., состоять из множества подпроцессов, таблиц принятия решений (Decision Tables) и многое другое.
+Вот пример бизнес процесса с <a href="https://ru.wikipedia.org/wiki/BPMN">Википедии</a>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Quotation_BPMN_Example.png" alt="BPMN">
+</div>
+</div>
+<div class="paragraph">
+<p>И я задумался о том, что алгоритм blockchain мог бы найти применение в оптимизации бизнес процессов между различными организациями.
+В этом случае организации, участвующие в бизнес процессе, получают достоверный источник данных, который нельзя подделать; аналитики -  возможность создавать БП знакомым способом.</p>
+</div>
+<div class="paragraph">
+<p>Собственно для вступления всё.
+Далее опишу сделанный мной proof of concept (доказательство концепции), который показывает, что это может быть реализовано.
+Для демонстрации я использую тестовую сеть Ethereum - <a href="https://rinkeby.etherscan.io" class="bare">https://rinkeby.etherscan.io</a>. Это сеть аналогична главной, разница только в технических деталях алгоритма, вкратце, он проще. И сделана специально для разработчиков. В качестве основы для BPMN среды разработки я взял <a href="http://camunda.org">Camunda</a>. Camunda одна из самых известных во всем мире создателей инструментов для BPM. Например, ею пользуются в <a href="http://www.zalando.com/" class="bare">http://www.zalando.com/</a>. Я взял их исходные коды (у них открытая лицензия, не волнуйтесь, это легально) и сделал БП, запускаемой на Camunda, интегрированной с blockchain.</p>
+</div>
+<div class="paragraph">
+<p>БП на blockchain выглядит  так :</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/MmgodsCUNx8?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>Хотелось бы предположить, что в скором времени все организации (и крупные, и средние), будут взаимодействовать подобным образом, чтобы снизить свои издержки и автоматизировать процессы, одновременно сделав их прозрачными.</p>
+</div>]]></description><link>https://egorlitvinenko.github.io/2017/09/20/BPMN.html</link><guid isPermaLink="true">https://egorlitvinenko.github.io/2017/09/20/BPMN.html</guid><category><![CDATA[bpmn]]></category><category><![CDATA[blockchain]]></category><dc:creator><![CDATA[Egor]]></dc:creator><pubDate>Wed, 20 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Self learning applications]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Status: Article in progress</p>
