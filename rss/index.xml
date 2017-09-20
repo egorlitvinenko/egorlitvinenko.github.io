@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 20 Sep 2017 16:04:54 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[BPMN и блокчейн]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Egor Litvinenko]]></title><description><![CDATA[Egor Litvinenko is a senior software developer. Working mostly with Java technologies and focusing on system integration and performance.]]></description><link>https://egorlitvinenko.github.io</link><image><url>themes/uno/assets/images/background-cover.jpg</url><title>Egor Litvinenko</title><link>https://egorlitvinenko.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 20 Sep 2017 16:06:25 GMT</lastBuildDate><atom:link href="https://egorlitvinenko.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[BPMN и блокчейн]]></title><description><![CDATA[<div class="paragraph">
 <p>Сегодня большинство из вас слышало о blockchain, поэтому перейду сразу к делу.
 Я занимался разработкой BPMN процессов и сервера, обслуживающего их.
 BPMN (Business Process Model and Notation) - это стандарт графического представление элементов для описание бизнес-процессов (БП) в BPM (Business Process Management) - управление процессами.
@@ -25,7 +25,7 @@ BPMN (Business Process Model and Notation) - это стандарт графи�
 </div>
 <div class="videoblock">
 <div class="content">
-<iframe width="850" height="640" src="https://www.youtube.com/embed/MmgodsCUNx8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="850" height="500" src="https://www.youtube.com/embed/MmgodsCUNx8?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
